@@ -1,0 +1,4 @@
+myenv
+files/voice/*
+.env
+__pycache__
