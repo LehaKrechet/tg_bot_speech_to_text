@@ -7,7 +7,10 @@ from speech_to_text import speech_to_text
 
 router = Router()
 DOWNLOAD_DIR = VOICE_DIR
-
+try:
+    os.makedirs(DOWNLOAD_DIR, exist_ok=True)
+except:
+    pass
 # @router.message(F.audio)
 # async def handle_audio(message: types.Message):
 #     # Получаем информацию об аудиофайле

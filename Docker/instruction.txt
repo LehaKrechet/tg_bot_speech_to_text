@@ -1,0 +1,2 @@
+docker build -f Docker/Dockerfile -t tg_bot_speech_to_text .  -собираем образ
+docker run -d -it --env-file .env tg_bot_speech_to_text       -запускаем контейнер
